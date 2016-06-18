@@ -1,0 +1,45 @@
+.wrap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    /*height: 400px;*/
+    background-color: white;
+	border-radius: 8px 8px 8px 8px;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px 15px 15px 15px;
+    box-shadow: 15px 15px 37px black;
+}
+
+.elem {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.elem img {
+    max-height: 150px;
+    max-width: 100px;
+    margin-left: 50px;
+    vertical-align: top;
+}
+.img {
+    display: inline-block;
+}
+.elem table{
+    width: 100%;
+    text-align: center;
+}
+table td {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.border_bottom td{
+  border-bottom:1px solid black;
+}
+
+.title {
+    /*display: inline-block;*/
+}

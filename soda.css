@@ -1,0 +1,37 @@
+#menu > li,
+#menu > li li
+{
+  z-index:99999;
+}
+#menu > li li
+{
+  z-index:99999;
+}
+#menu > li + li
+{
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #fff;
+}
+#article
+{
+    position: relative;
+    margin-top: 42px;
+    background-color: #7a7aff;
+    width: 1292px;
+    height: 364px;
+    border: 30px #7a7aff solid;
+    border-radius: 10px;
+    box-shadow: 4px 10px 47px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1
+{
+  position: absolute;
+  margin-left: 272px;
+  margin-top: -111px;
+  font-size: 80;
+  color: mediumblue;
+}
+
+body {background-color: #c0d6e4;}

@@ -2,7 +2,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    /*height: 400px;*/
     background-color: white;
 	border-radius: 8px 8px 8px 8px;
     position: relative;
@@ -38,8 +37,4 @@ table td {
 }
 .border_bottom td{
   border-bottom:1px solid black;
-}
-
-.title {
-    /*display: inline-block;*/
 }

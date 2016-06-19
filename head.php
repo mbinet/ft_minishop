@@ -1,7 +1,16 @@
 <?php
 session_start();
 include_once('functions.php');
-include_once('sql.php');
+
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$db_name = "canshop";
+$conn = mysqli_connect($servername, $username, $password, $db_name);
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 
 ?>
 <html>

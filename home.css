@@ -18,11 +18,6 @@
   font-size: 20px;
 }
 
-.register
-{
-  /*position: absolute;*/
-}
-
 .inscription
 {
     position: absolute;
@@ -125,7 +120,6 @@
   margin-top: 43px;
   background-color: lightsteelblue;
   width: 70%;
-  /*height: 950;*/
   border: 30px lightsteelblue solid;
   border-radius: 10px;
   box-shadow: 21px 22px 37px black;

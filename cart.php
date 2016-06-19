@@ -3,11 +3,6 @@ include_once('head.php');
 
 $var = $_GET['c'];
 $product = $_GET['add'];
-
-// // pr($conn);
-// $query = "SELECT * FROM products WHERE " . $var ."=1";
-
-//     while ($row = mysqli_fetch_array($result)) {
 $query = "SELECT * FROM products";
 ?>
 
@@ -57,7 +52,6 @@ $query = "SELECT * FROM products";
                         </td>
                     </tr>
                 <?php
-                // break ;
                 }
             }
             ?>
@@ -70,7 +64,6 @@ $query = "SELECT * FROM products";
             <tr>
                 <td colspan=5>
                         <form name="cart" action="" method="POST" style="position: inherit; top: 0;float:none;margin-bottom:0">
-                        <?php// $serialize = serialize($_SESSION['cart']); ?>
                         <input type="hidden" name="order" value="true"/>
                         <input type="submit" value="Commander" style=""/>
                     </form>

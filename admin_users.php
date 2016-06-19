@@ -15,7 +15,7 @@ include('head.php');
 </ul>
 <div class="admin">
     <!---------------------->
-    <!-- DELETE A PRODUCT -->
+    <!-- DELETE AN USER -->
     <!---------------------->
     <table border=0 style="text-align: center;width:80%;">
         <form name="del_product" action="" method="POST">
@@ -50,6 +50,45 @@ include('head.php');
         if ($_POST['delete_product'] == true) {
             mysqli_query($conn, "DELETE FROM users WHERE id='".$_POST['delete_id']."'") or die(mysqli_error($conn));
             echo "Produit supprimé";
+        }
+        ?>
+    </table>
+    <!---------------------->
+    <!-- GRANT AN USER -->
+    <!---------------------->
+    <table border=0 style="text-align: center;width:80%;">
+        <form name="del_product" action="" method="POST">
+            <tr>
+                <td colspan=3>
+                    Donner les droits admin
+                </td>
+            </tr>
+            <tr>
+                <td style="width:20%;">
+                </td>
+                <td style="width:20%;text-align:center">
+                    <select name="id">
+                    <?php
+                        $query = "SELECT * FROM users";
+                        if ($result = mysqli_query($conn, $query)) {
+                            while ($row = mysqli_fetch_array($result)) {
+                                echo "<option value='" . $row['id'] . "'>" . $row['login'] . "</option>";
+                            }
+                        }
+                    ?>
+                    </select>
+                    <br/><br/>
+                    <input type="hidden" name="grant" value="true"/>
+                    <input type="submit" name="submit" value="VALIDER"/>
+                </td>
+                <td style="width:20%;">
+                </td>
+            </tr>
+        </form>
+        <?php
+        if ($_POST['grant'] == true) {
+            mysqli_query($conn, "UPDATE users SET admin='1' WHERE id='".$_POST['id']."'") or die(mysqli_error($conn));
+            echo "Utilisateur admin";
         }
         ?>
     </table>

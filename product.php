@@ -6,7 +6,6 @@ $var = $_GET['c'];
 $product_id = $_GET['product_id'];
 $product_name = $_GET['product_name'];
 
-// pr($conn);
 $query = "SELECT * FROM products WHERE " . $var ."=1";
 
 if ($result = mysqli_query($conn, $query)) {
@@ -42,7 +41,6 @@ if ($result = mysqli_query($conn, $query)) {
 <?php
 
 if ($product_id) {
-    // $_SESSION = "";
     $_SESSION['cart'][$product_name]['quantity'] += 1;
     $_SESSION['cart'][$product_name]['id'] = $product_id;
     $_SESSION['cart'][$product_name]['price'] = $product_price;

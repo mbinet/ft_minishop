@@ -19,7 +19,6 @@ include('head.php');
     $result = mysqli_query($conn, $query);
     foreach ($result as $row) {
         $cmd = unserialize($row['string']);
-        // pr($cmd);
         ?>
         <table border=0>
             <tr class="border_bottom">
@@ -46,7 +45,6 @@ include('head.php');
                     $result = mysqli_query($conn, $query);
                     $row = mysqli_fetch_array($result);
                     if ($row != NULL) {
-                        // pr($row);
                         ?>
                         <tr class="border_bottom">
                             <td>
@@ -66,7 +64,6 @@ include('head.php');
                             </td>
                         </tr>
                     <?php
-                    // break ;
                     }
                 }
             ?>

@@ -1,9 +1,7 @@
 .admin table {
-    /*position: relative;*/
     margin-top: 42px;
     background-color: #7a7aff;
     width: 1292px;
-    /*height: 364px;*/
     border: 30px #7a7aff solid;
     border-radius: 10px;
     box-shadow: 4px 10px 47px black;
@@ -27,7 +25,6 @@
     border: none;
 }
 .admin input[type=submit]:hover {
-    /*filter: opacity(70%);*/
     -webkit-filter: opacity(70%);
     cursor: pointer;
 }

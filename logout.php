@@ -8,5 +8,4 @@ $_SESSION = "";
 $_SESSION['cart'] = "";
 $_SESSION['login'] = "";
 $_SESSION['admin'] = "";
-// pr($_SESSION['login']);
 ?>

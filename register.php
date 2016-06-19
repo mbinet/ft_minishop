@@ -32,7 +32,6 @@ else {
         $psd = hash("whirlpool", $_POST["passwd"]);
 	    $finalpass = hash("sha512", $psd."hyllore");
         mysqli_query($conn, "INSERT INTO users (login, password) VALUES ('" . $_POST['login'] . "', '" . $finalpass . "')") or die(mysqli_error($conn));
-        // $_SESSION['login'] = $_POST['login'];
         echo "Felicitation, vous etes inscrit.";
     }
 }

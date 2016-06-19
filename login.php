@@ -32,6 +32,10 @@ else {
         if ($finalpass == $row['password']) {
 	        $_SESSION['login'] = $_POST['login'];
 	        echo "Felicitation, vous etes connecte.";
+	        if ($row['admin'] == 1) {
+	            $_SESSION['admin'] = 1;
+	            echo " EN SUPERADMIN.";
+	        }
         }
     }
 }

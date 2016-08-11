@@ -4,8 +4,8 @@ include_once('functions.php');
 
 $servername = "localhost";
 $username = "root";
-$password = "root";
-$db_name = "canshop";
+$password = "";
+$db_name = "c9";
 $conn = mysqli_connect($servername, $username, $password, $db_name);
 // Check connection
 if (!$conn) {

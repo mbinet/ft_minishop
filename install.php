@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-$servername = "localhost";
+$servername = "127.0.0.1";
 $username = "root";
-$password = "root";
-$db_name = "canshop";
+$password = "";
+$db_name = "c9";
 // $port = "3306";
 
 // Create connection
